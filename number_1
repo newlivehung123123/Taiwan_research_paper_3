@@ -1,0 +1,8 @@
+//Create a new DoFile//
+//Create columns, each named "Author", "Year", "Province, "rural_Urban", "LBC_n", "NLBC_n", "sampling", "LBC_male", "LBC_age", "Mental_health", 
+>> "LBC_OR", "LBC_lci", "LBC_uci", "effect size", "standard error (se) of effect size"
+
+//Input all data from existing literature (i.e. Wanjie T et al., Liu J et al., Zhao, X et al., Liu, H. et al.)//
+
+//Create a forest plot//
+. metan LBC_OR LBC_lci LBC_uci, lcols (Author Year) by (Mental_health) null(1)
